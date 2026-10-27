@@ -1,0 +1,30 @@
+[project]
+name = "rag-deep-eval"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ss1ngh", email = "singhshreyansh2354@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain[google-genai]>=1.4.6",
+    "langchain-google-genai>=4.4.2",
+    "langchain-openai>=1.7.2",
+    "lock>=2018.3.25.2110",
+    "pymupdf>=1.28.2",
+    "requests>=2.34.2",
+    "python-dotenv>=1.2.4",
+    "openai>=3.35.1",
+    "numpy>=2.5.4",
+    "pydantic>=2.14.1",
+    "deepeval>=4.3.1",
+]
+
+[project.scripts]
+rag-deep-eval = "rag_deep_eval:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
